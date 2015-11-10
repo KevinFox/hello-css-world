@@ -1,0 +1,66 @@
+h1 {
+  color: darkturquoise;
+  text-align: center;
+  font-size: 50pxl;
+}
+
+p {
+  color: grey;
+  text-align: center;
+}
+
+#images {
+  margin: 50px auto 50px auto;
+  /*margin-top: 50px;*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: lightgrey;
+  width: 500px;
+  /*text-align: left;*/
+}
+
+.image-caption {
+  text-align: left;
+  padding: 0px 50px 0px 50px;
+}
+
+#forms-container {
+  margin: 50px auto 50px auto;
+  width: 850px;
+  border: 1px solid lightgrey;
+  font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+}
+
+.form-one {
+  background-color: #f6f7f9;
+  width: 400px;
+  float: left;
+}
+.form-two {
+  background-color: #44a9e4;
+  width: 400px;
+  float: right;
+}
+
+.form-one p {
+  color: #7c7d7f;
+}
+
+.form-two p {
+  color: white;
+}
+
+.form-caption {
+  padding-top: 20px;
+}
+
+.send-button {
+  float: right;
+}
+.cancel-button {
+  float: right;
+}
+
+textarea {
+   resize: none;
+}
