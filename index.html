@@ -28,49 +28,69 @@
 
     <!-- First Form -->
     <div id="forms-container">
-      <div class="form-one">
+      <div id="form-one">
         <form action="http://www.example.com/com/subscribe.php" method="get">
           <p>Form Style 1</p>
-          <p>Username <input type="text" name="username" maxlength="30"/>
-          </p>
-          <p>Email <input type="text" name="email"/>
-          </p>
-          <p>Password <input type="text" name="password"/>
-          </p>
-          <p>Email <input type="text" name="email"/>
-          </p>
-          <p>Info <textarea name="info" cols="30" rows="5"> Any comments?</textarea>
-          </p>
-          <p>Interests <select name="interests">
-            <option value="music">Music</option>
-            <option value="movies">Movies</option>
-            <option value="dogs">Dogs</option>
-            <option value="cats">Cats</option>
-            <option value="pokemon">pokemon</option>
-          </select>
-          </p>
-          <p>Favorite Movie Genre <select name="genre">
-            <option value="action">Action</option>
-            <option value="comedy">Comedy</option>
-            <option value="documentary">Documentary</option>
-            <option value="drama">Drama</option>
-            <option value="fantasy">Fantasy</option>
-            <option value="horror">Horror</option>
-            <option value="sci-fi">Science Fiction</option>
-            <option value="suspence">Suspence</option>
-            <option value="western">Western</option>
-          </select>
-          </p>
-          <p>Secret <select name="secret" disabled="true">
-            <option value="password">Password</option>
-            <option value="crush">Crush</option>
-            <option value="criminal-past">Criminal Past</option>
-          </select>
-          </p>
-          <input class="send-button" type="button" value="send" name="Send"/>
-          <input class="cancel-button" type="button" value="cancel" name="Cancel"/>
+          <div>
+            <label class="form-label" for="username">Username</label>
+            <input type="text" name="username" maxlength="30"/>
+          </div>
+          <div>
+            <label class="form-label" for="email">Email</label>
+            <input type="text" name="email"/>
+          </div>
+          <div>
+            <label class="form-label" for="password">Password</label>
+            <input type="text" name="password"/>
+          </div>
+          <div id="textarea-div">
+            <label class="textarea-label" for="info">Info</label>
+            <textarea name="info">Any comments?</textarea>
+          </div>
+          <div>
+            <label class="select-label" for="interests">Passion</label>
+              <select name="interests">
+              <option value="music">Music</option>
+              <option value="movies">Movies</option>
+              <option value="dogs">Dogs</option>
+              <option value="cats">Cats</option>
+              <option value="pokemon">pokemon</option>
+              </select>
+          </div>
+          <div>
+            <label class="select-label" for="genre">Favorite Genre</label>
+              <select name="genre">
+              <option value="action">Action</option>
+              <option value="comedy">Comedy</option>
+              <option value="documentary">Documentary</option>
+              <option value="drama">Drama</option>
+              <option value="fantasy">Fantasy</option>
+              <option value="horror">Horror</option>
+              <option value="sci-fi">Science Fiction</option>
+              <option value="suspence">Suspence</option>
+              <option value="western">Western</option>
+            </select>
+          </div>
+          <div>
+            <label class="select-label" for="secret">Secret</label>
+              <select name="secret" disabled="true">
+              <option value="password">Password</option>
+              <option value="crush">Crush</option>
+              <option value="criminal-past">Criminal Past</option>
+            </select>
+          </div>
+          <div>
+            <input class="send-button" type="button" value="send" name="Send"/>
+            <input class="cancel-button" type="button" value="cancel" name="Cancel"/>
+          </div>
         </form>
       </div>
+
+
+
+
+
+
 
       <!-- Second Form -->
       <div class="form-two">
@@ -82,11 +102,9 @@
           </p>
           <p>Password <input type="text" name="password"/>
           </p>
-          <p>Email <input type="text" name="email"/>
-          </p>
           <p>Info <textarea name="info" cols="30" rows="5"> Any comments?</textarea>
           </p>
-          <p>Interests <select name="interests">
+          <p>Passion <select name="passion">
             <option value="music">Music</option>
             <option value="movies">Movies</option>
             <option value="dogs">Dogs</option>
@@ -94,7 +112,7 @@
             <option value="pokemon">pokemon</option>
           </select>
           </p>
-          <p>Favorite Movie Genre <select name="genre">
+          <p>Favorite Genre <select name="genre">
             <option value="action">Action</option>
             <option value="comedy">Comedy</option>
             <option value="documentary">Documentary</option>
