@@ -30,7 +30,7 @@
     <div id="forms-container">
       <div id="form-one">
         <form action="http://www.example.com/com/subscribe.php" method="get">
-          <p>Form Style 1</p>
+          <h5>Log In</h5>
           <div>
             <label class="form-label" for="username">Username</label>
             <input type="text" name="username" maxlength="30"/>
@@ -57,7 +57,7 @@
               <option value="pokemon">pokemon</option>
               </select>
           </div>
-          <div>
+          <!-- <div>
             <label class="select-label" for="genre">Favorite Genre</label>
               <select name="genre">
               <option value="action">Action</option>
@@ -70,7 +70,7 @@
               <option value="suspence">Suspence</option>
               <option value="western">Western</option>
             </select>
-          </div>
+          </div> -->
           <div>
             <label class="select-label" for="secret">Secret</label>
               <select name="secret" disabled="true">
@@ -94,30 +94,43 @@
 
       <!-- Second Form -->
       <div id="form-two">
-        <form action="http://www.example.com/com/subscribe.php" method="get">
-          <h2>Log In to BluBox</h2>
-          <div>
-            <input class="text-field" type="text" name="username" maxlength="30" placeholder="Username"/>
-          </div>
-          <div>
-            <input class="text-field" type="password" name="password" placeholder="Password"/>
-          </div>
-          <div>
-            <input class="remember-checkbox" type="checkbox" name"remember-user" value="remember"/>
-            <p1>Remember Me</p1>
-            <input class="login-button" type="button" name="login" value="Log In"/>
-          </div>
-          <div style="clear:both"></div> <!-- Needed to keep the div within their parent div -->
-          <div class="forgot-containter">
-            <button class="forgot-button" type="button" name="forgot">Forgot details?</button>
-          </div>
-          <h4>Don't have an account?</h4>
-          <div>
-            <!-- <input class="create-account-button" type="button" name="create-account" value="Create an Account"/> -->
-            <button class="create-account-button" type="button" name="create-account">Create an Account</button>
-          </div>
-        </form>
+        <div class="form-two-top">
+          <form action="http://www.example.com/com/subscribe.php" method="get">
+            <h2>Log In <span class="bluebox">to Blubox</span></h2>
+            <div>
+              <input class="text-field" type="text" name="username" maxlength="30" placeholder="Username"/>
+            </div>
+            <div>
+              <input class="text-field" type="password" name="password" placeholder="Password"/>
+            </div>
+            <div>
+              <div class="checkbox-container">
+                <input class="remember-checkbox" type="checkbox" name"remember-user" value="remember"/>
+                <p1 class="remember-me-label">Remember Me</p1>
+              </div>
+              <div class="login-container">
+                <input class="login-button" type="button" name="login" value="Log In"/>
+              </div>
+
+            </div>
+            <div style="clear:both"></div> <!-- Needed to keep the div within their parent div -->
+            <div class="forgot-containter">
+              <button class="forgot-button" type="button" name="forgot">Forgot details?</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-two-bottom">
+          <form action="http://www.example.com/com/join.php" method="get">
+            <h4>Don't have an account?</h4>
+            <div>
+              <!-- <input class="create-account-button" type="button" name="create-account" value="Create an Account"/> -->
+              <button class="create-account-button" type="button" name="create-account">Create an Account</button>
+            </div>
+          </form>
+        </div>
       </div>
+
       <div style="clear:both"></div> <!-- Needed to keep the div within their parent div -->
       <p class="form-caption">Forms are hard, but they make things do things. So that's kewl.</p>
     </div>

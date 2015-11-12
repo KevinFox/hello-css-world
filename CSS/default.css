@@ -7,7 +7,14 @@ h1 {
 h2 {
   color: white;
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px 0px 24px 0px;
+  text-shadow: 0px -1px #0e6597;
+}
+
+.bluebox {
+  color: #cdebfb;
 }
 
 p {
@@ -35,7 +42,7 @@ p {
 /* FORM STYLING */
 #forms-container {
   margin: 50px auto 50px auto;
-  width: 850px;
+  width: 750px;
   /*border: 1px solid lightgrey;*/
   font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
 }
@@ -142,19 +149,19 @@ p {
   /*margin: 20px auto;*/
 }
 
-::-webkit-input-placeholder {
+#form-one ::-webkit-input-placeholder {
    font-weight: 200;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+#form-one :-moz-placeholder { /* Firefox 18- */
    font-weight: 200;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+#form-one ::-moz-placeholder {  /* Firefox 19+ */
    font-weight: 200;
 }
 
-:-ms-input-placeholder {
+#form-one :-ms-input-placeholder {
    font-weight: 200;
 }
 
@@ -163,21 +170,40 @@ p {
 
 
 #form-two {
+  float: right;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#form-two .form-two-top {
   background-color: #44a9e4;
   width: 250px; /* Should be 400px */
+  padding: 5px 30px 20px 30px;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: #53b3e7;
+}
+
+#form-two .form-two-bottom {
+  background-color: #41a6df;
+  width: 250px; /* Should be 400px */
   padding: 0px 30px 30px 30px;
-  float: right;
-  border-radius: 3px;
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #3795d2;
 }
 
 #form-two .text-field {
   width: 230px; /* actual width is 250. -20 to account for padding */
   height: 37px;
   border: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 0px 10px 0px 10px;
   border-radius: 3px;
   text-align: left;
+  box-shadow: 0px -1px 1px #3d90bf;
+  font-size: 14px;
+  color: #4b4e4f;
 }
 
 /* Start by hiding the checkboxes */
@@ -185,9 +211,26 @@ p {
 	visibility: hidden;
 }*/
 
-#form-two .checkbox-div {
+/*#form-two .checkbox-div {
   width: 20px;
   height: 20px;
+}*/
+
+#form-two .checkbox-container {
+  height: 22px;
+  width: 160px;
+  margin: 10px 0px 10px 0px;
+  /*vertical-align: middle;*/
+  float: left;
+}
+
+#form-two .remember-checkbox {
+  position: relative;
+}
+
+#form-two .remember-me-label {
+  /*display: table-cell;*/
+  vertical-align: middle;
 }
 
 
@@ -208,6 +251,7 @@ p {
   text-shadow: 0px 1px #e8f3f9;
   font-size: 14px;
   float: right;
+  cursor: pointer;
 }
 
 #form-two .forgot-containter {
@@ -217,16 +261,17 @@ p {
 
 #form-two .forgot-button {
   /*margin: 0px auto 0px auto;*/
-  padding: 6px 10px 6px 10px;
+  margin-top: 20px;
+  padding: 5px 10px 7px 10px;
   border-style: solid;
   border-radius: 3px;
   background-color: #3e98d6;
   border-width: 0px;
-  box-shadow: 0px 1px #7fcdf3, 0px -1px #3682ad;
+  box-shadow: 0px 1px #63bfec, 0px -1px #378dbd;
   color: white;
   text-shadow: 0px -1px #3a6f8c;
   font-weight: 200;
-  /*float: right;*/
+  cursor: pointer;
 }
 
 #form-two .create-account-button {
@@ -246,6 +291,7 @@ p {
   font-size: 14px;
   /*display: table-cell;*/
   /*vertical-align: middle;*/
+  cursor: pointer;
 }
 
 
@@ -255,8 +301,18 @@ p {
   color: white;
 }
 
+#form-one h5 {
+  color: grey;
+  font-size: 18px;
+  /*font-weight: 200;*/
+  text-align: left;
+  margin: 30px 0px 30px 0px;
+}
+
 #form-two p1 {
   color: white;
+  font-size: 12px;
+  font-weight: 200;
 }
 
 #form-two h3 {
@@ -271,6 +327,8 @@ p {
   font-size: 11px;
   text-align: center;
   text-shadow: 0px -1px #3682ad;
+  padding-top: 25px;
+  margin-top: 0px;
 }
 
 .form-caption {
