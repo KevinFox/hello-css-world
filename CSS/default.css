@@ -4,6 +4,12 @@ h1 {
   /*font-size: 50px;*/
 }
 
+h2 {
+  color: white;
+  text-align: left;
+  font-size: 20px;
+}
+
 p {
   color: grey;
   text-align: center;
@@ -25,6 +31,7 @@ p {
 }
 
 
+
 /* FORM STYLING */
 #forms-container {
   margin: 50px auto 50px auto;
@@ -32,6 +39,8 @@ p {
   /*border: 1px solid lightgrey;*/
   font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
 }
+
+
 
 #form-one {
   background-color: #f6f7f9;
@@ -67,8 +76,8 @@ p {
   font-size: 14px;
 }
 
-#form-one input[type=text], input[type=password]{
-  width: 218px; /* should be 220 */
+#form-one input[type=text], #form-one input[type=password]{
+  width: 218px; /* should be 220 - accounting for stroke */
   height: 40px;
   padding: 0px 10px 0px 10px;
   margin-bottom: 10px;
@@ -105,7 +114,8 @@ p {
 #form-one .send-button {
   float: right;
   padding: 12px 14px 12px 14px;
-  margin-right: 20px;
+  margin-top: 15px;
+  margin-right: 20px; /* adds spacing against cancel button */
   background-color: #1a98e1;
   border-width: 1px;
   border-style: solid;
@@ -120,6 +130,7 @@ p {
 #form-one .cancel-button {
   float: right;
   padding: 12px 14px 12px 14px;
+  margin-top: 15px;
   background-color: #dcdee1;
   border-width: 1px;
   border-style: solid;
@@ -151,14 +162,115 @@ p {
 
 
 
-.form-two {
+#form-two {
   background-color: #44a9e4;
-  width: 400px;
+  width: 250px; /* Should be 400px */
+  padding: 0px 30px 30px 30px;
+  float: right;
+  border-radius: 3px;
+}
+
+#form-two .text-field {
+  width: 230px; /* actual width is 250. -20 to account for padding */
+  height: 37px;
+  border: 0px;
+  margin-bottom: 10px;
+  padding: 0px 10px 0px 10px;
+  border-radius: 3px;
+  text-align: left;
+}
+
+/* Start by hiding the checkboxes */
+/*input[type=checkbox] {
+	visibility: hidden;
+}*/
+
+#form-two .checkbox-div {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Button Styles */
+#form-two .login-button {
+  /*width: 250px;*/
+  padding: 0px 20px 0px 20px;
+  height: 42px;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 3px;
+  background: -webkit-linear-gradient(#dcedf6, #b6d7eb); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#dcedf6, #b6d7eb); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#dcedf6, #b6d7eb); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#dcedf6, #b6d7eb); /* Standard syntax */
+  box-shadow: 0px 1px 1px #3382b0, 0px -1px #eaf5fb;
+  color: #464e53;
+  text-shadow: 0px 1px #e8f3f9;
+  font-size: 14px;
   float: right;
 }
 
-.form-two p {
+#form-two .forgot-containter {
+  text-align: center;
+  /*margin: auto;*/
+}
+
+#form-two .forgot-button {
+  /*margin: 0px auto 0px auto;*/
+  padding: 6px 10px 6px 10px;
+  border-style: solid;
+  border-radius: 3px;
+  background-color: #3e98d6;
+  border-width: 0px;
+  box-shadow: 0px 1px #7fcdf3, 0px -1px #3682ad;
   color: white;
+  text-shadow: 0px -1px #3a6f8c;
+  font-weight: 200;
+  /*float: right;*/
+}
+
+#form-two .create-account-button {
+  width: 250px;
+  height: 42px;
+  /*padding: 12px 0px 12px 0px;*/
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 3px;
+  background: -webkit-linear-gradient(#67c1f1, #4fafec); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#67c1f1, #4fafec); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#67c1f1, #4fafec); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#67c1f1, #4fafec); /* Standard syntax */
+  box-shadow: 0px 1px 1px #3682ad, 0px -1px #7fcdf3;
+  color: white;
+  text-shadow: 0px -1px #3682ad;
+  font-size: 14px;
+  /*display: table-cell;*/
+  /*vertical-align: middle;*/
+}
+
+
+
+
+#form-two p {
+  color: white;
+}
+
+#form-two p1 {
+  color: white;
+}
+
+#form-two h3 {
+  color: white;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+#form-two h4 {
+  color: #cdebfb;
+  font-weight: 200;
+  font-size: 11px;
+  text-align: center;
+  text-shadow: 0px -1px #3682ad;
 }
 
 .form-caption {
